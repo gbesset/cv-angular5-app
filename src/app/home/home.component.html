@@ -1,0 +1,17 @@
+
+
+<ul class="timeline" *ngFor='let xp of experiences;let odd = odd;let even = even'>
+
+	<li>
+		<div [class.direction-l]="odd" [class.direction-r]="even" >
+			<div class="flag-wrapper">
+				<span class="flag">{{xp.titre}}</span>
+				<span class="time-wrapper"><span class="time">{{xp.from}} - {{xp.to}}</span></span>
+			</div>
+			<div class="desc">{{xp.shortDescription}}   {{xp.company}}{{xp.type}}</div>
+		</div>
+	</li>
+	
+</ul>
+
+
